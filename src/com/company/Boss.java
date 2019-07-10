@@ -1,6 +1,6 @@
 package com.company;
 
-public class Boss extends Player{
+public class Boss extends Player implements SuperAbility{
     private String defence = "Physical";
 
     public String getDefence() {
@@ -12,5 +12,7 @@ public class Boss extends Player{
     }
 
 
-
+    @Override
+    public void SuperAb() {
+    }
 }

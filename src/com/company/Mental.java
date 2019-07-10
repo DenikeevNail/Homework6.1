@@ -1,6 +1,6 @@
 package com.company;
 
-public class Mental extends Player{
+public class Mental extends Player implements SuperAbility{
     private int braindamage = 30; //атака силой мысли
 
     public int getBraindamage() {
@@ -12,6 +12,9 @@ public class Mental extends Player{
     }
 
 
-
+    @Override
+    public void SuperAb() {
+        System.out.println("супер прыжок");
     }
+}
 

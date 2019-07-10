@@ -1,6 +1,6 @@
 package com.company;
 
-public class Magical extends Player {
+public class Magical extends Player implements SuperAbility{
     private int heal = 50; //лечить
 
     public int getHeal() {
@@ -12,6 +12,9 @@ public class Magical extends Player {
     }
 
 
-
+    @Override
+    public void SuperAb() {
+        System.out.println("супер молния");
     }
+}
 
